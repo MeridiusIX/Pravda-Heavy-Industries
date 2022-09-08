@@ -1,0 +1,73 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Pravda-Trigger-SwitchToHunter</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:Timer]
+
+        [ToggleWithTriggerProfile:Pravda-Trigger-SwitchToVulture]
+
+        [MinCooldownMs:10000]
+        [MaxCooldownMs:10001]
+
+        [Conditions:Pravda-Condition-SwitchToHunter]
+        [ConditionCheckResetsTimer:true]
+
+        [StartsReady:false]
+        [MaxActions:-1]
+
+        [Actions:Pravda-Action-SwitchToHunter]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Pravda-Condition-SwitchToHunter</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Condition]
+
+        [BehaviorModeCheck:true]
+        [CurrentBehaviorMode:WaitingForTarget]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Pravda-Action-SwitchToHunter</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Action]
+
+        [StopAllThrust:true]
+        [StopAllRotation:true]
+
+        [ChangeBehaviorSubclass:true]
+        [NewBehaviorSubclass:Hunter]
+
+        [ChangeAutopilotProfile:true]
+        [AutopilotProfile:Primary]
+
+      </Description>
+
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

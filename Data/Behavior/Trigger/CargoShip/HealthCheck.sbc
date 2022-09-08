@@ -1,0 +1,218 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Pravda-Trigger-HealthCheck</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:HealthPercentage]
+
+        [PercentageOfHealthRemaining:90]
+        [UseFailCondition:true]
+
+        [MinCooldownMs:5000]
+        [MaxCooldownMs:5001]
+
+        [StartsReady:true]
+        [MaxActions:1]
+        [ActionExecution:Random]
+        [Actions:Pravda-Action-HealthCheck-Reinforcements]
+        [Actions:Pravda-Action-HealthCheck-Retreat]
+        [Actions:Pravda-Action-HealthCheck-Nothing]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Pravda-Action-HealthCheck-Reinforcements</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Action]
+
+        [Retreat:true]
+
+        [UseChatBroadcast:true]
+        [ChatData:Pravda-Chat-HealthCheck-Reinforcements]
+
+        [SpawnEncounter:true]
+        [Spawner:Pravda-Spawn-HealthCheck-Reinforcements]
+
+        [BroadcastCommandProfiles:true]
+        [CommandProfileIds:Pravda-Command-HealthCheck-Reinforcements]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Pravda-Spawn-HealthCheck-Reinforcements</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Spawn]
+
+        [UseSpawn:true]
+        [StartsReady:true]
+        [MaxSpawns:1]
+
+        [SpawnGroups:Pravda-SpawnGroup-ReinforcementsA]
+        [SpawnGroups:Pravda-SpawnGroup-ReinforcementsB]
+
+        [MinDistance:5000]
+        [MaxDistance:6000]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Pravda-Command-HealthCheck-Reinforcements</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Command]
+
+        [CommandCode:PravdaReinforcementsTarget]
+        [MatchSenderReceiverOwners:true]
+        [SendTargetEntityId:true]
+        [IgnoreAntennaRequirement:true]
+        [CommandDelayTicks:480]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Pravda-Chat-HealthCheck-Reinforcements</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Chat]
+
+        [UseChat:true]
+        [StartsReady:true]
+        [MaxChats:1]
+        [BroadcastRandomly:true]
+        [Author:Pravda Ship Captain]
+        [Color:Red]
+
+        [ChatMessages:We're taking some heavy fire, call for reinforcements!]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+        [ChatMessages:Looks like we're going to need to bring in some additional support.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Pravda-Action-HealthCheck-Retreat</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Action]
+
+        [Retreat:true]
+
+        [UseChatBroadcast:true]
+        [ChatData:Pravda-Chat-HealthCheck-Retreat]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Pravda-Chat-HealthCheck-Retreat</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Chat]
+
+        [UseChat:true]
+        [StartsReady:true]
+        [MaxChats:1]
+        [BroadcastRandomly:true]
+        [Author:Pravda Ship Captain]
+        [Color:Red]
+
+        [ChatMessages:It appears we've underestimated you. I'm sure we'll meet again.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+        [ChatMessages:This isn't over...]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+      </Description>
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Pravda-Action-HealthCheck-Nothing</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Action]
+
+        [Retreat:true]
+
+        [UseChatBroadcast:true]
+        [ChatData:Pravda-Chat-HealthCheck-Nothing]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Pravda-Chat-HealthCheck-Nothing</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Chat]
+
+        [UseChat:true]
+        [StartsReady:true]
+        [MaxChats:1]
+        [BroadcastRandomly:true]
+        [Author:Pravda Ship Captain]
+        [Color:Red]
+
+        [ChatMessages:You've managed to cause some serious damage. Don't think for a second that means we're giving up.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+        [ChatMessages:We're ready to fight to the death, no matter the odds.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+      </Description>
+    </EntityComponent>
+    
+  </EntityComponents>
+</Definitions>

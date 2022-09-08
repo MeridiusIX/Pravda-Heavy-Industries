@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Factions>
+
+    <Faction Tag="PRAVDA" Founder="The Figurehead">
+      <Id>
+        <TypeId>MyObjectBuilder_FactionDefinition</TypeId>
+        <SubtypeId>PravdaHeavyIndustries</SubtypeId>
+      </Id>
+      <DisplayName>Pravda Heavy Industries</DisplayName>
+      <Description>Pravda Heavy Industries is a warship manufacturer known for their unique and unconventional designs. Publicly, they try to maintain a neutral appearance - however that facade quickly dissolves when anyone tries to look closely at what they're really doing with their ships, with any attempt to do so being aggressively repelled. While there is no concrete evidence to prove the following, it's said that the entire corporation is a front for another more secretive organization that harbors a malevolent agenda.</Description>
+      <IsDefault>true</IsDefault>
+      <DefaultRelation>Neutral</DefaultRelation>
+      <AcceptHumans>false</AcceptHumans>
+      <AutoAcceptMember>false</AutoAcceptMember>
+    </Faction>
+
+  </Factions>
+</Definitions>

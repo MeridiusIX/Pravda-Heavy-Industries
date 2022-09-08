@@ -1,0 +1,211 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SpawnGroups>
+
+    <!--ReinforcementsA-->
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Pravda-SpawnGroup-ReinforcementsA</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [FactionOverride:PRAVDA]
+        [ReplenishSystems:true]
+        [MaxGravity:0]
+        [BehaviorSpawn:true]
+
+        [PrefabSpawningMode:RandomSelectedIndexes]
+
+        [PrefabIndexGroupNames:ShipA]
+        [PrefabIndexGroupValues:1]
+
+        [PrefabIndexGroupNames:ShipA]
+        [PrefabIndexGroupValues:2]
+
+        [PrefabIndexGroupNames:ShipB]
+        [PrefabIndexGroupValues:3]
+
+        [PrefabIndexGroupNames:ShipB]
+        [PrefabIndexGroupValues:4]
+
+        [PrefabIndexGroupNames:ShipC]
+        [PrefabIndexGroupValues:5]
+
+        [PrefabIndexGroupNames:ShipC]
+        [PrefabIndexGroupValues:6]
+
+        [ManipulationGroups:Pravda-Manipulation-Group]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>5.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-PHI) Javelin Interceptor">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-CargoShip</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PHI) Javelin Interceptor">
+          <Position>
+            <X>300.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-Reinforcement</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PHI) Razorfang Heavy Fighter">
+          <Position>
+            <X>300.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-Reinforcement</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PHI) Javelin Interceptor">
+          <Position>
+            <X>0.0</X>
+            <Y>300.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-Reinforcement</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PHI) Razorfang Heavy Fighter">
+          <Position>
+            <X>0.0</X>
+            <Y>300.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-Reinforcement</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PHI) Javelin Interceptor">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>300.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-Reinforcement</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PHI) Razorfang Heavy Fighter">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>300.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-Reinforcement</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <!--ReinforcementsB-->
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Pravda-SpawnGroup-ReinforcementsB</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [FactionOverride:PRAVDA]
+        [ReplenishSystems:true]
+        [MaxGravity:0]
+        [BehaviorSpawn:true]
+
+        [PrefabSpawningMode:RandomSelectedIndexes]
+
+        [PrefabIndexGroupNames:ShipA]
+        [PrefabIndexGroupValues:1]
+
+        [PrefabIndexGroupNames:ShipB]
+        [PrefabIndexGroupValues:2]
+
+        [PrefabIndexGroupNames:ShipB]
+        [PrefabIndexGroupValues:3]
+
+        [PrefabIndexGroupNames:ShipC]
+        [PrefabIndexGroupValues:4]
+
+        [PrefabIndexGroupNames:ShipC]
+        [PrefabIndexGroupValues:5]
+
+        [ManipulationGroups:Pravda-Manipulation-Group]
+        [ManipulationProfiles:Pravda-Manipulation-DamageMod]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>5.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-PHI) Javelin Interceptor">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-CargoShip</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PHI) Wyvern-Class Mobile Weapon">
+          <Position>
+            <X>300.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-ReinforcementB</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PHI) Razorfang Heavy Fighter">
+          <Position>
+            <X>0.0</X>
+            <Y>300.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-Reinforcement</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PHI) Javelin Interceptor">
+          <Position>
+            <X>0.0</X>
+            <Y>300.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-Reinforcement</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PHI) Razorfang Heavy Fighter">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>300.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-Reinforcement</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PHI) Javelin Interceptor">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>300.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-Reinforcement</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+  </SpawnGroups>
+</Definitions>

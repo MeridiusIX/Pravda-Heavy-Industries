@@ -1,0 +1,673 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SpawnGroups>
+
+    <!--Derzky-->
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Pravda-SpawnGroup-Derzky</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionGroups:Pravda-SpawnConditionsGroup-SpaceCargoShip]
+        [FactionOverride:PRAVDA]
+        [ReplenishSystems:true]
+        [UseFirstConditionsAsPersistent:true]
+
+        [UseThreatLevelCheck:true]
+        [ThreatLevelCheckRange:10000]
+        [ThreatScoreMinimum:350]
+
+        [ManipulationGroups:Pravda-Manipulation-Group]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>4.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-PHI) Derzky-Class Patrol Craft">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-CargoShip</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PHI) Javelin Interceptor">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PHI) Razorfang Heavy Fighter">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PHI) Javelin Interceptor">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PHI) Razorfang Heavy Fighter">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-Escort</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <!--Gaede-->
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Pravda-SpawnGroup-Gaede</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionGroups:Pravda-SpawnConditionsGroup-SpaceCargoShip]
+        [FactionOverride:PRAVDA]
+        [ReplenishSystems:true]
+        [UseFirstConditionsAsPersistent:true]
+
+        [UseThreatLevelCheck:true]
+        [ThreatLevelCheckRange:10000]
+        [ThreatScoreMinimum:700]
+
+        [ManipulationGroups:Pravda-Manipulation-Group]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>3.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-PHI) Gaede-Class Frigate">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-CargoShip</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PHI) Javelin Interceptor">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PHI) Razorfang Heavy Fighter">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PHI) Javelin Interceptor">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PHI) Razorfang Heavy Fighter">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-Escort</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+
+    <!--Gnevny-->
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Pravda-SpawnGroup-Gnevny</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionGroups:Pravda-SpawnConditionsGroup-SpaceCargoShip]
+        [FactionOverride:PRAVDA]
+        [ReplenishSystems:true]
+        [UseFirstConditionsAsPersistent:true]
+
+        [UseThreatLevelCheck:true]
+        [ThreatLevelCheckRange:10000]
+        [ThreatScoreMinimum:1000]
+
+        [ManipulationGroups:Pravda-Manipulation-Group]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-PHI) Gnevny II-Class Aviation Destroyer">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-CargoShip</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PHI) Javelin Interceptor">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PHI) Razorfang Heavy Fighter">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PHI) Javelin Interceptor">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PHI) Razorfang Heavy Fighter">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-Escort</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <!--GrafSpee-->
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Pravda-SpawnGroup-GrafSpee</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionGroups:Pravda-SpawnConditionsGroup-SpaceCargoShip]
+        [FactionOverride:PRAVDA]
+        [ReplenishSystems:true]
+        [UseFirstConditionsAsPersistent:true]
+
+        [UseThreatLevelCheck:true]
+        [ThreatLevelCheckRange:10000]
+        [ThreatScoreMinimum:1000]
+
+        [ManipulationGroups:Pravda-Manipulation-Group]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>2.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-PHI) Graf Spee-Class Heavy Cruiser">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-CargoShip</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PHI) Javelin Interceptor">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PHI) Razorfang Heavy Fighter">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PHI) Javelin Interceptor">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PHI) Razorfang Heavy Fighter">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-Escort</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <!--Mako-->
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Pravda-SpawnGroup-Mako</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionGroups:Pravda-SpawnConditionsGroup-SpaceCargoShip]
+        [FactionOverride:PRAVDA]
+        [ReplenishSystems:true]
+        [UseFirstConditionsAsPersistent:true]
+
+        [UseThreatLevelCheck:true]
+        [ThreatLevelCheckRange:10000]
+        [ThreatScoreMinimum:350]
+
+        [ManipulationGroups:Pravda-Manipulation-Group]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>5.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-PHI) Mako-Class Fast Attack Craft">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-CargoShip</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PHI) Javelin Interceptor">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PHI) Razorfang Heavy Fighter">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PHI) Javelin Interceptor">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PHI) Razorfang Heavy Fighter">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-Escort</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <!--Moskit-->
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Pravda-SpawnGroup-Moskit</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionGroups:Pravda-SpawnConditionsGroup-SpaceCargoShip]
+        [FactionOverride:PRAVDA]
+        [ReplenishSystems:true]
+        [UseFirstConditionsAsPersistent:true]
+
+        [UseThreatLevelCheck:true]
+        [ThreatLevelCheckRange:10000]
+        [ThreatScoreMinimum:350]
+
+        [ManipulationGroups:Pravda-Manipulation-Group]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>4.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-PHI) Moskit Class Missile Boat">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-CargoShip</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PHI) Javelin Interceptor">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PHI) Razorfang Heavy Fighter">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PHI) Javelin Interceptor">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PHI) Razorfang Heavy Fighter">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-Escort</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <!--Nideggen-->
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Pravda-SpawnGroup-Nideggen</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionGroups:Pravda-SpawnConditionsGroup-SpaceCargoShip]
+        [FactionOverride:PRAVDA]
+        [ReplenishSystems:true]
+        [UseFirstConditionsAsPersistent:true]
+
+        [UseThreatLevelCheck:true]
+        [ThreatLevelCheckRange:10000]
+        [ThreatScoreMinimum:700]
+
+        [ManipulationGroups:Pravda-Manipulation-Group]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>3.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-PHI) Nideggen II-Class Frigate">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-CargoShip</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PHI) Javelin Interceptor">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PHI) Razorfang Heavy Fighter">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PHI) Javelin Interceptor">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PHI) Razorfang Heavy Fighter">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-Escort</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <!--PrinzEugen-->
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Pravda-SpawnGroup-PrinzEugen</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionGroups:Pravda-SpawnConditionsGroup-SpaceCargoShip]
+        [FactionOverride:PRAVDA]
+        [ReplenishSystems:true]
+        [UseFirstConditionsAsPersistent:true]
+
+        [UseThreatLevelCheck:true]
+        [ThreatLevelCheckRange:10000]
+        [ThreatScoreMinimum:1000]
+
+        [ManipulationGroups:Pravda-Manipulation-Group]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>2.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-PHI) Prinz Eugen">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-CargoShip</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PHI) Javelin Interceptor">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PHI) Razorfang Heavy Fighter">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PHI) Javelin Interceptor">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PHI) Razorfang Heavy Fighter">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-Escort</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+    <!--Weser-->
+
+    <SpawnGroup>
+      <Id>
+        <TypeId>SpawnGroupDefinition</TypeId>
+        <SubtypeId>Pravda-SpawnGroup-Weser</SubtypeId>
+      </Id>
+      <Description>
+
+        [Modular Encounters SpawnGroup]
+
+        [SpawnConditionGroups:Pravda-SpawnConditionsGroup-SpaceCargoShip]
+        [FactionOverride:PRAVDA]
+        [ReplenishSystems:true]
+        [UseFirstConditionsAsPersistent:true]
+
+        [UseThreatLevelCheck:true]
+        [ThreatLevelCheckRange:10000]
+        [ThreatScoreMinimum:1000]
+
+        [ManipulationGroups:Pravda-Manipulation-Group]
+
+      </Description>
+      <IsPirate>true</IsPirate>
+      <Frequency>1.0</Frequency>
+      <Prefabs>
+        <Prefab SubtypeId="(NPC-PHI) Weser II-Class Carrier">
+          <Position>
+            <X>0.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-CargoShip</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PHI) Javelin Interceptor">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PHI) Razorfang Heavy Fighter">
+          <Position>
+            <X>-150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PHI) Javelin Interceptor">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-Escort</Behaviour>
+        </Prefab>
+        <Prefab SubtypeId="(NPC-PHI) Razorfang Heavy Fighter">
+          <Position>
+            <X>150.0</X>
+            <Y>0.0</Y>
+            <Z>0.0</Z>
+          </Position>
+          <Speed>18</Speed>
+          <Behaviour>Pravda-Behavior-Escort</Behaviour>
+        </Prefab>
+      </Prefabs>
+    </SpawnGroup>
+
+  </SpawnGroups>
+</Definitions>

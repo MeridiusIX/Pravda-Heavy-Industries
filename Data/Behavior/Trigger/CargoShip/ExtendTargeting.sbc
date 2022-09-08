@@ -1,0 +1,116 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Pravda-Trigger-ExtendTargeting</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:Timer]
+
+        [MinCooldownMs:45000]
+        [MaxCooldownMs:45001]
+
+        [Conditions:Pravda-Condition-ExtendTargeting]
+
+        [StartsReady:false]
+        [MaxActions:-1]
+
+        [ActionExecution:All]
+        [Actions:Pravda-Action-ExtendTargeting-Low]
+        [Actions:Pravda-Action-ExtendTargeting-Both]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Pravda-Condition-ExtendTargeting</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Condition]
+
+        [BehaviorModeCheck:true]
+        [CurrentBehaviorMode:ApproachWaypoint]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Pravda-Action-ExtendTargeting-Low</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Action]
+
+        [Chance:100]
+
+        [ChangeTargetProfile:true]
+        [NewTargetProfileId:Pravda-Target-Main]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Pravda-Action-ExtendTargeting-Both</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Action]
+
+        [Chance:12]
+
+        [ChangeTargetProfile:true]
+        [NewTargetProfileId:Pravda-Target-PlayerNpc]
+
+        [UseChatBroadcast:true]
+        [ChatData:Pravda-Chat-ExtendTargeting]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Pravda-Chat-ExtendTargeting</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Chat]
+
+        [UseChat:true]
+        [StartsReady:true]
+        [MaxChats:1]
+        [BroadcastRandomly:true]
+        [Author:Pravda Ship Captain]
+        [Color:Red]
+
+        [ChatMessages:New orders received. Perform wide-area scan and engage any hostiles.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+        [ChatMessages:We got some reports of hostiles in the area. Prepare to engage if scans reveal their location.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+      </Description>
+    </EntityComponent>
+    
+  </EntityComponents>
+</Definitions>

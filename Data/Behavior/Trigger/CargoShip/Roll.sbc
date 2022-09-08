@@ -1,0 +1,67 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Pravda-Trigger-Roll</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:Timer]
+
+        [MinCooldownMs:30000]
+        [MaxCooldownMs:45001]
+
+        [Conditions:Pravda-Condition-Roll]
+        [ConditionCheckResetsTimer:true]
+
+        [StartsReady:false]
+        [MaxActions:-1]
+
+        [Actions:Pravda-Action-Roll]
+
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Pravda-Condition-Roll</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Condition]
+
+        [BehaviorSubclassCheck:true]
+        [BehaviorSubclass:Vulture]
+
+        [BehaviorModeCheck:true]
+        [CurrentBehaviorMode:ApproachTarget]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Pravda-Action-Roll</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Action]
+        [BarrelRoll:true]
+
+      </Description>
+
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

@@ -1,0 +1,98 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Pravda-Trigger-Ramming</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:ActiveWeaponsPercentage]
+
+        [PercentageOfWeaponsRemaining:25]
+        [UseFailCondition:true]
+
+        [Conditions:Pravda-Condition-Ramming]
+
+        [MinCooldownMs:120000]
+        [MaxCooldownMs:240000]
+
+        [StartsReady:true]
+        [MaxActions:-1]
+        [Actions:Pravda-Action-Ramming]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Pravda-Condition-Ramming</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Condition]
+
+        [BehaviorModeCheck:true]
+        [CurrentBehaviorMode:Retreat]
+        [UseFailCondition:true]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Pravda-Action-Ramming</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Action]
+
+        [Chance:25]
+
+        [UseChatBroadcast:true]
+        [ChatData:Pravda-Chat-Ramming]
+
+        [Ramming:true]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Pravda-Chat-Ramming</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Chat]
+
+        [UseChat:true]
+        [StartsReady:true]
+        [MaxChats:1]
+        [BroadcastRandomly:true]
+        [Author:Pravda Ship Captain]
+        [Color:Red]
+
+        [ChatMessages:Most of our weapons are down... Let's show them our fangs up close.]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+        [ChatMessages:You've certainly taken a bite out of our offensive systems. Except one...]
+        [ChatAudio:ArcHudGPSNotification1]
+        [BroadcastChatType:Chat]
+
+      </Description>
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Pravda-TriggerGroup-CargoShipGroup</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI TriggerGroup]
+
+        [Triggers:Pravda-Trigger-DamageAggression]
+        [Triggers:Pravda-Trigger-ExtendTargeting]
+        [Triggers:Pravda-Trigger-HealthCheck]
+        [Triggers:Pravda-Trigger-InhibitorActivation]
+        [Triggers:Pravda-Trigger-InhibitorDeactivation]
+        [Triggers:Pravda-Trigger-PlayerClose]
+        [Triggers:Pravda-Trigger-PlayerVeryClose]
+        [Triggers:Pravda-Trigger-ProcessEscortRequest]
+        [Triggers:Pravda-Trigger-Ramming]
+        [Triggers:Pravda-Trigger-Roll]
+        [Triggers:Pravda-Trigger-SwitchToHunter]
+        [Triggers:Pravda-Trigger-SwitchToVulture]
+        [Triggers:Pravda-Trigger-WeaponAvailability]
+
+      </Description>
+
+    </EntityComponent>
+    
+  </EntityComponents>
+</Definitions>

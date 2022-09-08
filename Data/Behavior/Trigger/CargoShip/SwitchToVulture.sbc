@@ -1,0 +1,54 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Pravda-Trigger-SwitchToVulture</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Trigger]
+
+        [UseTrigger:true]
+        [Type:BehaviorTriggerD]
+
+        [ToggleWithTriggerProfile:Pravda-Trigger-SwitchToHunter]
+
+        [StartsReady:true]
+        [MaxActions:-1]
+
+        [Actions:Pravda-Action-SwitchToVulture]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Pravda-Action-SwitchToVulture</SubtypeId>
+      </Id>
+      <Description>
+
+        [RivalAI Action]
+
+        [StopAllThrust:true]
+        [StopAllRotation:true]
+
+        [ChangeBehaviorSubclass:true]
+        [NewBehaviorSubclass:Vulture]
+
+        [ChangeAutopilotProfile:true]
+        [AutopilotProfile:Tertiary]
+
+        [ResetCooldownTimeOfTriggers:true]
+        [ResetTriggerCooldownNames:Pravda-Trigger-SwitchToHunter]
+
+      </Description>
+
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>

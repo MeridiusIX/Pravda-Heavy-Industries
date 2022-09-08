@@ -1,0 +1,114 @@
+﻿<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <!--Space Cargo Ship-->
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Pravda-SpawnConditionsGroup-SpaceCargoShip</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Spawn Conditions Group]
+
+        [SpawnConditionProfiles:Pravda-SpawnConditions-SpaceCargoShip-EscortDouble]
+        [SpawnConditionProfiles:Pravda-SpawnConditions-SpaceCargoShip-EscortSingle]
+        [SpawnConditionProfiles:Pravda-SpawnConditions-SpaceCargoShip]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Pravda-SpawnConditions-SpaceCargoShip</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Spawn Conditions]
+
+        [SpaceCargoShip:true]
+        [LunarCargoShip:true]
+
+        [PrefabSpawningMode:SelectedIndexes]
+        [PrefabIndexes:0]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Pravda-SpawnConditions-SpaceCargoShip-EscortSingle</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Spawn Conditions]
+
+        [SpaceCargoShip:true]
+        [LunarCargoShip:true]
+
+        [SpaceCargoShipChance:20]
+        [LunarCargoShipChance:20]
+
+        [PrefabSpawningMode:RandomSelectedIndexes]
+
+        [PrefabIndexGroupNames:Main]
+        [PrefabIndexGroupValues:0]
+
+        [PrefabIndexGroupNames:EscortA]
+        [PrefabIndexGroupValues:1]
+
+        [PrefabIndexGroupNames:EscortA]
+        [PrefabIndexGroupValues:2]
+
+      </Description>
+
+    </EntityComponent>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+
+      <Id>
+        <TypeId>Inventory</TypeId>
+        <SubtypeId>Pravda-SpawnConditions-SpaceCargoShip-EscortDouble</SubtypeId>
+      </Id>
+      <Description>
+
+        [MES Spawn Conditions]
+
+        [SpaceCargoShip:true]
+        [LunarCargoShip:true]
+
+        [SpaceCargoShipChance:20]
+        [LunarCargoShipChance:20]
+
+        [PrefabSpawningMode:RandomSelectedIndexes]
+
+        [PrefabIndexGroupNames:Main]
+        [PrefabIndexGroupValues:0]
+
+        [PrefabIndexGroupNames:EscortA]
+        [PrefabIndexGroupValues:1]
+
+        [PrefabIndexGroupNames:EscortA]
+        [PrefabIndexGroupValues:2]
+
+        [PrefabIndexGroupNames:EscortB]
+        [PrefabIndexGroupValues:3]
+
+        [PrefabIndexGroupNames:EscortB]
+        [PrefabIndexGroupValues:4]
+
+      </Description>
+
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>
